@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    background: #f5f6fc;
+    color: #252541;
+}
+
+header {
+    text-align: center;
+    padding: 3.5rem 1rem 4rem;
+    background: linear-gradient(135deg, #171638, #35256f 65%, #5140a5);
+    color: white;
+}
+
+.profile-image {
+    display: block;
+    width: 126px;
+    height: 126px;
+    margin: 0 auto 1.25rem;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 8px 24px rgba(8, 6, 35, 0.28);
+}
+
+.eyebrow,
+.section-label,
+.project-number {
+    margin: 0 0 0.4rem;
+    font-size: 0.76rem;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+}
+
+.eyebrow {
+    color: #48dfc0;
+}
+
+.section-label,
+.project-number {
+    color: #6550d2;
+}
+
+header h1 {
+    margin: 0.2rem 0;
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    line-height: 1.15;
+}
+
+.subtitle {
+    margin: 0.65rem auto 1rem;
+    color: #d6d2ff;
+    font-size: 1.05rem;
+}
+
+.hero-intro {
+    max-width: 650px;
+    margin: 1rem auto 0;
+    color: #f2f0ff;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 4px 18px rgba(35, 29, 83, 0.08);
+}
+
+nav a {
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    color: #35256f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #eeeaff;
+    color: #5d43cf;
+}
+
+main {
+    width: min(940px, 92%);
+    margin: 2.5rem auto;
+}
+
+section {
+    scroll-margin-top: 5.5rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    background: white;
+    border: 1px solid #e7e6f3;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(41, 35, 91, 0.06);
+}
+
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    margin: 0 0 1rem;
+    color: #35256f;
+    font-size: 1.8rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    color: #5140a5;
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+    margin: 1.2rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+#skills li {
+    padding: 1rem;
+    background: #f7f6ff;
+    border: 1px solid #e8e3ff;
+    border-radius: 12px;
+}
+
+#skills li strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #4d37b4;
+}
+
+#skills li span {
+    display: block;
+    font-size: 0.95rem;
+}
+
+article {
+    padding: 1.5rem;
+    background: #f7f6ff;
+    border-left: 4px solid #7b61ff;
+    border-radius: 0 12px 12px 0;
+}
+
+.project-number {
+    color: #6550d2;
+}
+
+article h3 {
+    margin-top: 0.4rem;
+}
+
+.project-note,
+.form-note {
+    color: #6b6a83;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #5b42cf;
+}
+
+form {
+    display: grid;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #d7d5e8;
+    border-radius: 10px;
+    background: #fcfcff;
+    color: #252541;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #e4dfff;
+    border-color: #7b61ff;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    justify-self: start;
+    margin-top: 0.3rem;
+    padding: 0.8rem 1.2rem;
+    border: 0;
+    border-radius: 10px;
+    background: #6550d2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: #4e39b3;
+}
+
+#formMessage {
+    margin: 0;
+    color: #207b6b;
+}
+
+.form-note {
+    margin-top: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem 1.5rem;
+    flex-wrap: wrap;
+    padding: 1.5rem 1rem;
+    background: #171638;
+    color: #eae8ff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer span {
+    color: #48dfc0;
+}
+
+footer a {
+    color: #74ead3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 2.5rem 1rem 3rem;
+    }
+
+    main {
+        margin: 1.5rem auto;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 0.2rem;
+    }
+
+    nav a {
+        padding: 0.4rem 0.65rem;
+    }
+}

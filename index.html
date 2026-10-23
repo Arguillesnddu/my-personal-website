@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website | Arguilles </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <img class="profile-image" src="Images/profile.jpg">
+
+        <p class="eyebrow">STUDENT PORTFOLIO</p>
+        <h1>Arguilles</h1>
+        <p class="subtitle">STUDENT | Aspiring Computing Professional</p>
+
+        <p class="hero-intro">
+            I am a BSIT student interested in computer and information technology.
+            I am still learning and improving my skills. I want to explore how
+            different tools can help me solve problems and make things easier.
+        </p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <p class="section-label">INTRODUCTION</p>
+            <h2>About Me</h2>
+
+            <p>
+                Hello there! I am currently a first-year BSIT student, and this is my
+                website project created using Figma Sites. I know there is still a lot
+                for me to learn, especially in programming, web development, and other
+                areas of technology. I see every activity and project as a chance to
+                improve, learn from my mistakes, and become more confident in my
+                abilities. I hope to use my knowledge to create useful
+                and meaningful projects.
+            </p>
+
+            <h3>Interests and Hobbies</h3>
+
+            <p>
+                In my free time, I like exploring different things about computers and
+                technology. I enjoy learning about software, coding, web development,
+                and the tools used to create websites. I am also interested in network
+                systems and computer hardware, especially learning about the different
+                components and how they work together. There is still a lot for me to
+                learn, and I enjoy discovering new things whenever I have the chance.
+            </p>
+        </section>
+
+        <section id="skills">
+            <p class="section-label">CAPABILITIES</p>
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>
+                    <strong>Basic Networking</strong>
+                    <span>
+                        I am learning how networks work, how devices connect, and how
+                        to troubleshoot simple network problems.
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Computer Hardware</strong>
+                    <span>
+                        I like learning about computer components, their functions,
+                        and how they work together.
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Basic Coding</strong>
+                    <span>
+                        I am learning how to write code and understand how programming
+                        works.
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Web Development</strong>
+                    <span>
+                        I am interested in creating websites and learning how HTML
+                        and CSS are used.
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Software and Tools</strong>
+                    <span>
+                        I enjoy exploring software and tools that can help me with
+                        computer-related tasks.
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Problem-Solving</strong>
+                    <span>
+                        I try to understand problems step by step and find ways to
+                        solve them.
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <p class="section-label">MY TASKS</p>
+            <h2>My Projects</h2>
+
+            <article>
+                <p class="project-number">PROJECT 01</p>
+                <h3>FIGMA AND HTML/CSS/JAVA WEBSITE BUILDING</h3>
+
+                <p>
+                    I have made projects using Figma site creation and coding HTML/CSS/JAVASCRIPT using Visual Code Studio, Git, Github, and then deploy them to vercel.
+                </p>
+
+                <p class="project-note">
+                    More project details and screenshots may be added as I continue
+                    learning.
+                </p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <p class="section-label">CONNECT</p>
+            <h2>Contact Me</h2>
+
+            <p>
+                If you want to learn more about my student portfolio or have any
+                comments and suggestions, feel free to contact me at
+                <a href="mailto:arggls75@gmail.com">arggls75@gmail.com</a>.
+                I would be happy to hear your feedback and learn from your ideas.
+                Thank you for taking the time to visit my website!
+            </p>
+
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Last Name, First Name"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Example@Email.com"
+                    required
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message <span aria-hidden="true">→</span>
+                </button>
+
+                <p id="formMessage" aria-live="polite"></p>
+            </form>
+
+            <p class="form-note">
+                DEMO
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Arguilles <span>•</span> Student Portfolio</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
